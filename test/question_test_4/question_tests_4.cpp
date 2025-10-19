@@ -10,3 +10,23 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("get_fib_number returns 5 for input 5")
+{
+	REQUIRE(get_fib_number(5) == 5);
+}
+
+TEST_CASE("get_fib_number returns 13 for input 7")
+{
+	REQUIRE(get_fib_number(7) == 13);
+}
+
+TEST_CASE("get_fib_number returns 55 for input 10")
+{
+	REQUIRE(get_fib_number(10) == 55);
+}
+
+TEST_CASE("get_fib_number returns 144 for input 12")
+{
+	REQUIRE(get_fib_number(12) == 144);
+}
